@@ -60,9 +60,9 @@ type Ending = 'victory' | 'execution' | null
 const PLAYER_STARTS_AS: Faction = 'SLAVE'
 const LOSS_DEBT = 100_000_000
 // Set NEXT_PUBLIC_WEBSOCKET_URL once you deploy ws-server/ (see HUONG_DAN_WEBSOCKET.md).
-// Falls back to Render-deployed server if env var not set.
+// Falls back to Railway-deployed server if env var not set.
 // the WebSocketNetworkEngine below degrades gracefully when it can't connect.
-const WEBSOCKET_URL = process.env.NEXT_PUBLIC_WEBSOCKET_URL || 'wss://ecard-pvp-.onrender.com'
+const WEBSOCKET_URL = process.env.NEXT_PUBLIC_WEBSOCKET_URL || 'wss://ecard-pvp-production.up.railway.app'
 const RECONNECT_DELAY = 3000
 const MAX_RECONNECT_ATTEMPTS = 10
 
